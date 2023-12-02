@@ -7,7 +7,8 @@ export default function ApiTester() {
 
     return(
         <div>
-            <h1>API URL: {connectionData.u}</h1>
+            {/* <h1>API URL: {connectionData.url}</h1> */}
+            <h1>API URL: {url}</h1>
         </div>
     )
 
