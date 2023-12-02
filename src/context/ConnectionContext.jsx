@@ -1,6 +1,6 @@
 import { createContext } from "react"
 
-export const defaultConnectionData = {
+const defaultConnectionData = {
     url: "https://pokeapi.co/api/v2/pokemon"
 }
 

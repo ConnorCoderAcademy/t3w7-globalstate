@@ -1,13 +1,16 @@
 export const userReducer = (previousState, instructions) => {
-    let newstate = {...previousState}
-
+    let newState = {...previousState}
+    console.log(instructions)
     switch (instructions.type){
-        case "login": 
+        case "setJwt":
+            newState = instructions.data;
+            return newState;
+        case "login":
             newState = "Pretend a fetch request finished and returned a JWT";
             return newState;
         case "logout":
             // newState = '';
-            // return newstate;
+            // return newState;
             return '';
         default:
             return newState;
